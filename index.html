@@ -26,16 +26,16 @@
 
 </head>
 <body>
-    <nav class="p-8 bg-black-100 bg-stone-50">
-      <div class="navbar  ">
+    <nav class="  w-full backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200 firefox:bg-opacity-90 p-8 bg-black-100 bg-stone-50 backdroop sticky">
+      <div class="navbar  flex">
 
         <div class="navbar-start">
-          <button class="btn btn-accent">Blogs</button>
+          <button id="blogs" class="btn btn-accent">Blogs</button>
         </div>
 
         <div class="navbar-center flex text-center gap-x-2">
           <img src="./assets/logo.png" alt="">
-          <h1 class=" text-center text-balck-900 font-bold text-2xl"> Donet Bangladesh</h1>
+          <h1 class=" text-center text-balck-900 font-bold text-2xl"> Donaet Bangladesh</h1>
         </div>
 
         <div class="navbar-end gap-x-2">
@@ -50,17 +50,17 @@
     <section class="p-16  ">
       <div class="m-x-5"> 
       <div class=" flex justify-center gap-x-4">
-        <button class="btn btn-accent ">Donation</button>
-        <button class="btn btn-accent">History</button>
+        <button id="Donation" class=" w-1/8 py-2 px-3 rounded-lg  text-black  font-semibold bg-green-400 ">donation</button>
+        <button  id="History" class=" w-1/8 py-2 px-3 rounded-lg  text-black font-semibold">history</button>
       </div>
-     <div class="p-16 space-y-9 ">
+     <div id="donation1" class="p-x-4 lg:p-16 space-y-9 ">
       <!-- card-01 -->
-       <div class="flex gap-x-8  p-12 border-inherit outline-offset-2">
+       <div class="  p-2 lg:flex gap-x-8  p-12 border-inherit outline-offset-2">
        
           <img src="./assets/feni.png" class="w-cover h-full" alt="">
         
 
-        <div class="space-y-6">
+        <div class="space-y-6 h-full">
           <div class="flex gap-x-2 pt-2">
             <img src="./assets/coin.png" alt="">
             <h1 id="card-01-donation-money" class="text-xl">0</h1>
@@ -71,14 +71,33 @@
             <p class="w-3/4">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
            <input id="card-01-input" type="number" class="w-3/4 h-9 " placeholder="Write Donation Amount" name="" id="">
             <br>
-            <button id="card-01" class="btn btn-accent w-3/4">Donate Now</button>
-          </div>
+            <button    id="card-01" class="btn btn-accent w-3/4"
+                       onclick="my_modal_5.showModal()">Donate Now</button>
+            <!-- Open the modal using ID.showModal() method -->
+            
+            <!-- <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div class="modal-box">
+              <h3 class="text-2xl font-bold ">Congrates!</h3>
+              <img src="/assets/coin.png" alt="">
+              <p class="py-4">You Have Donaet for Humankind</p>
+              <h3 class="text-lg font-bold">Successfully</h3>
+            <div class="modal-action">
+            <form method="dialog">
+         
+            <button class="btn">Close Confirmation</button>
+            </form>
+            </div>
+            </div>
+            </dialog> -->
 
+            
         </div>
-       </div>
+      </div>
+    </div>
+         
 
       <!-- card-02 -->
-      <div class="flex gap-x-8  p-12 border-inherit outline-offset-2">
+      <div class="p-2 lg:flex gap-x-8  p-12 border-inherit outline-offset-2">
        
         <img src="./assets/noakhali.png" class="w-cover h-full" alt="">
       
@@ -102,7 +121,7 @@
 
       
       <!-- card-03 -->
-      <div class="flex gap-x-8  p-12 border-inherit outline-offset-2">
+      <div class="p-2 lg:flex gap-x-8  p-12 border-inherit outline-offset-2">
        
         <img src="./assets/quota-protest.png" class="w-cover h-full" alt="">
       
@@ -126,8 +145,23 @@
 
     
     </div>
+    <!-- history -->
+
+   
+      <div id="history1" >
+
+      </div>
+
+    
+
     </section>
     <footer class="p-8 bg-black-100 bg-stone-50 h-9"></footer>
-    <script src="donet.js"></script>
+
+    
+     <!-- modal part -->
+     
+    <script src="/donet.js"></script>
+    <script src="/donationHistory.js"></script>
+   
 </body>
 </html>
