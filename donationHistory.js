@@ -1,4 +1,4 @@
-
+// donation button/
 document.getElementById("Donation").addEventListener(
     'click', function(event){
         event.preventDefault();

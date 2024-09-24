@@ -140,12 +140,7 @@ document.getElementById("card-03")
     historyResult.insertBefore(historyItem3,historyResult.firstChild);}
 })
 
-// button side//
 
-
-
-
-        // history added//
        
 
  
